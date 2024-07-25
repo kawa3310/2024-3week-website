@@ -3,7 +3,8 @@
   .logo{
     width: 80px;
     height: 48px;
-    background: url("/img/logo-new1.png") no-repeat center / cover;
+    margin: 12px 0;
+    background: url("https://github.com/kawa3310/2024-3week-website/blob/main/img/logo-new1.png?raw=true") no-repeat center / cover;
     @include mobile{
       margin: 16px 0;
     }
