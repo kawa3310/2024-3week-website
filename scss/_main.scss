@@ -1,0 +1,45 @@
+.main{
+  background-color: #FBF2F2;
+  h3{
+    @include mobile{
+      padding-top: 40px;
+    }
+  }
+  .row{
+    margin: 0 -12px;
+    padding: 24px 0 80px 0;
+    @include mobile{
+      padding-bottom: 40px;
+    }
+    .col-3{
+      width: 25%;
+      @include ipad{
+        width: 50%;
+      }
+      @include mobile{
+        width: 100%;
+      }
+    }
+  }
+}
+
+.card-title{
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  @include mobile{
+    padding-bottom: 24px;
+  }
+  img{
+    width: 84px;
+  }
+  h4{
+    font-size: $font-m;
+    font-weight: bold;
+    color: $text-danger;
+    padding-bottom: 8px;
+    @include mobile{
+      padding: 16px 0 8px;
+    }
+  }
+}

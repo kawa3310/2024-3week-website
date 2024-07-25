@@ -1,0 +1,54 @@
+.service{
+  background-color: #FBF2F2;
+  padding-bottom: 80px;
+  @include mobile{
+    padding-bottom: 40px;
+  }
+  .col-6{
+    max-width: 636px;
+    margin: 0 auto;
+    color: #000000;
+    font-size: $font-s;
+    @include ipad{
+      font-size: 16px;
+    }
+    h3{
+      color: $text-danger;
+    }
+  }
+}
+
+form{
+  margin-top: 24px;
+  font-size: 16px;
+  input{
+    width: 100%;
+    margin: 8px 0 16px;
+    padding: 6px 12px 6px;
+  }
+  .checkbox{
+    width: 24px;
+    margin-bottom: 48px;
+    @include mobile{
+      margin-bottom: 0px;
+    }
+  }
+  textarea{
+    resize: none;
+    padding: 6px 12px 106px;
+    margin-bottom: 16px;
+  }
+  .submit{
+    max-width: 416px;
+    border: 0;
+    color: $text-light;
+    background-color: $text-danger-50;
+    padding: 16px 0;
+    :hover{
+      background-color: $text-danger;
+    }
+    @include mobile{
+      margin-top: 24px;
+    }
+  }
+}

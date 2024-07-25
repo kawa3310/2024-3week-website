@@ -1,0 +1,44 @@
+.bc-img{
+  .main-img{  
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true") no-repeat center center/ cover;
+    @include ipad{
+      background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true") no-repeat center center / cover;
+    }
+  }
+}
+
+.title{
+  padding: 296px 0;
+  @include mobile{
+    padding: 144px 0;
+  }
+  .title-group{
+    text-align: right;
+    p{
+      font-size: $font-l;
+      @include mobile{
+        font-size: 16px;
+      }
+    }
+    h2{
+      font-size: $font-xxl;
+      font-weight: bold;
+      padding-top: 4px;
+      @include mobile{
+        font-size: $font-m;
+        padding-top: 8px;
+      }
+    }
+    .btn{
+      padding-top: 4px;
+      @include mobile{
+        padding-top: 8px;
+      }
+      a{
+        background-color: $text-danger-50;
+        padding: 6px 12px;
+        font-size: $font-s;
+      }
+    }
+  }
+}
