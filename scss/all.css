@@ -149,6 +149,10 @@ h3 {
   padding: 0 12px;
 }
 
+.row {
+  margin: 0px -12px;
+}
+
 .nav {
   background-color: #AA0601;
 }
@@ -199,14 +203,16 @@ h3 {
 }
 
 .title {
-  padding: 296px 0;
+  height: 787px;
+  justify-content: flex-end;
 }
 @media (max-width: 375px) {
   .title {
-    padding: 144px 0;
+    height: 396px;
   }
 }
 .title .title-group {
+  align-items: center;
   text-align: right;
 }
 .title .title-group p {
@@ -241,6 +247,9 @@ h3 {
   padding: 6px 12px;
   font-size: 20px;
 }
+.title .title-group .btn :hover {
+  background-color: #650300;
+}
 
 .main {
   background-color: #FBF2F2;
@@ -251,7 +260,6 @@ h3 {
   }
 }
 .main .row {
-  margin: 0 -12px;
   padding: 24px 0 80px 0;
 }
 @media (max-width: 375px) {
@@ -298,9 +306,6 @@ h3 {
   }
 }
 
-.section .row {
-  margin: 0 -12px;
-}
 .section .col-4 {
   width: 33.3333%;
 }
@@ -321,7 +326,7 @@ h3 {
 }
 
 .side-img {
-  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true") center center/cover;
 }
 @media (max-width: 375px) {
   .side-img {
@@ -362,9 +367,6 @@ h3 {
     margin-bottom: 40px;
     padding-bottom: 0;
   }
-}
-.comment .row {
-  margin: 0 -12px;
 }
 .comment .col-3 {
   width: 25%;
@@ -453,6 +455,8 @@ form textarea {
   resize: none;
   padding: 6px 12px 106px;
   margin-bottom: 16px;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
 }
 form .submit {
   max-width: 416px;
@@ -460,9 +464,6 @@ form .submit {
   color: #FFFFFF;
   background-color: #AA0601;
   padding: 16px 0;
-}
-form .submit :hover {
-  background-color: #650300;
 }
 @media (max-width: 375px) {
   form .submit {
@@ -568,7 +569,8 @@ form .submit :hover {
 }
 
 .border {
-  margin: 32px 0;
+  border-bottom: 1px solid #FFFFFF;
+  padding: 32px 0;
 }
 
 .footer-text {

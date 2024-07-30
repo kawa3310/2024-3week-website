@@ -8,11 +8,13 @@
 }
 
 .title{
-  padding: 296px 0;
+  height: 787px;
+  justify-content: flex-end;
   @include mobile{
-    padding: 144px 0;
+    height: 396px;
   }
   .title-group{
+    align-items: center;
     text-align: right;
     p{
       font-size: $font-l;
@@ -38,6 +40,9 @@
         background-color: $text-danger-50;
         padding: 6px 12px;
         font-size: $font-s;
+      }
+      :hover{
+        background-color: $text-danger;
       }
     }
   }

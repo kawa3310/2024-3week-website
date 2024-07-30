@@ -6,7 +6,6 @@
     }
   }
   .row{
-    margin: 0 -12px;
     padding: 24px 0 80px 0;
     @include mobile{
       padding-bottom: 40px;
@@ -40,6 +39,91 @@
     padding-bottom: 8px;
     @include mobile{
       padding: 16px 0 8px;
+    }
+  }
+}
+
+.section{
+  .col-4{
+    width: 33.3333%;
+    @include ipad{
+      width: 100%;
+    }
+    h3{
+      font-style: italic;
+      color: $text-danger-50;
+      padding-top: 8px;
+      @include mobile{
+        font-size: $font-xl;
+      }
+    }
+  }
+}
+
+.side-img{
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true") center center /cover;
+  @include mobile{
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true") center center /cover;
+    margin-top: 40px;
+  }
+  h3{
+    color: $text-light;
+    @include mobile{
+      font-size: $font-m;
+    }
+  }
+  .card{
+    width: 50%;
+    @include ipad{
+      width: 100%;
+    }
+  }
+  .text{
+    font-style: italic;
+    background-color: $text-light;
+    color: $text-danger-50;
+    margin-bottom: 80px;
+    @include mobile{
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.comment{
+  @include mobile{
+    margin-bottom: 40px;
+    padding-bottom: 0;
+  }
+  .col-3{
+    width: 25%;
+    @include ipad{
+      width: 50%;
+    }
+    @include mobile{
+      width: 100%;
+    }
+  }
+}
+
+.card-body{
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px #00000029;
+  @include ipad{
+    margin-bottom: 24px;
+    height: auto;
+  }
+  .data{
+    color: #000000;
+    padding: 16px 16px 16px 16px;
+    p{
+      padding: 8px 0 48px;
+      @include ipad{
+        padding-bottom: 72px;
+      }
+    }
+    span{
+      font-size: $font-sm;
+      color: #707070;
     }
   }
 }
