@@ -147,12 +147,10 @@ h3 {
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 12px;
-  border: 1px solid #33c069;
 }
 
 .row {
   margin: 0px -12px;
-  border: 1px solid #2970cc;
 }
 
 .nav {
@@ -311,7 +309,6 @@ h3 {
 .section .col-4 {
   width: 33.3333%;
   padding: 0 12px;
-  border: 1px solid #000;
 }
 @media (max-width: 768px) {
   .section .col-4 {
@@ -375,7 +372,6 @@ h3 {
 .comment .col-3 {
   width: 25%;
   padding: 0 12px;
-  border: 1px solid #000;
 }
 @media (max-width: 768px) {
   .comment .col-3 {
