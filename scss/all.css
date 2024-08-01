@@ -147,10 +147,12 @@ h3 {
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 12px;
+  border: 1px solid #33c069;
 }
 
 .row {
   margin: 0px -12px;
+  border: 1px solid #2970cc;
 }
 
 .nav {
@@ -259,24 +261,24 @@ h3 {
     padding-top: 40px;
   }
 }
-.main .row {
-  padding: 24px 0 80px 0;
+.main .row-cart {
+  padding-bottom: 80px;
 }
 @media (max-width: 375px) {
-  .main .row {
+  .main .row-cart {
     padding-bottom: 40px;
   }
 }
-.main .row .col-3 {
+.main .row-cart .col-3 {
   width: 25%;
 }
 @media (max-width: 768px) {
-  .main .row .col-3 {
+  .main .row-cart .col-3 {
     width: 50%;
   }
 }
 @media (max-width: 375px) {
-  .main .row .col-3 {
+  .main .row-cart .col-3 {
     width: 100%;
   }
 }
@@ -308,6 +310,8 @@ h3 {
 
 .section .col-4 {
   width: 33.3333%;
+  padding: 0 12px;
+  border: 1px solid #000;
 }
 @media (max-width: 768px) {
   .section .col-4 {
@@ -370,6 +374,8 @@ h3 {
 }
 .comment .col-3 {
   width: 25%;
+  padding: 0 12px;
+  border: 1px solid #000;
 }
 @media (max-width: 768px) {
   .comment .col-3 {
@@ -421,6 +427,7 @@ h3 {
 .service .col-6 {
   max-width: 636px;
   margin: 0 auto;
+  border: 1px solid #000;
   color: #000000;
   font-size: 20px;
 }
