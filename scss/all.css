@@ -321,7 +321,7 @@ h3 {
 }
 @media (max-width: 375px) {
   .section .col-4 h3 {
-    font-size: 48px;
+    font-size: 24px;
   }
 }
 
