@@ -318,12 +318,18 @@ h3 {
 }
 @media (max-width: 375px) {
   .section .col-4 h3 {
-    font-size: 24px;
+    font-size: 48px;
   }
 }
 
 .side-img {
   background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true") center center/cover;
+}
+@media (max-width: 768px) {
+  .side-img {
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true") center center/cover;
+    margin-top: 80px;
+  }
 }
 @media (max-width: 375px) {
   .side-img {
@@ -333,11 +339,7 @@ h3 {
 }
 .side-img h3 {
   color: #FFFFFF;
-}
-@media (max-width: 375px) {
-  .side-img h3 {
-    font-size: 24px;
-  }
+  font-weight: bold;
 }
 .side-img .card {
   width: 50%;
@@ -345,6 +347,14 @@ h3 {
 @media (max-width: 768px) {
   .side-img .card {
     width: 100%;
+  }
+}
+.side-img .card h3 {
+  padding-top: 8px;
+}
+@media (max-width: 375px) {
+  .side-img .card h3 {
+    font-size: 48px;
   }
 }
 .side-img .text {

@@ -43,6 +43,7 @@
   }
 }
 
+
 .section{
   .col-4{
     width: 33.3333%;
@@ -55,7 +56,7 @@
       color: $text-danger-50;
       padding-top: 8px;
       @include mobile{
-        font-size: $font-m;
+        font-size: $font-xl;
       }
     }
   }
@@ -63,20 +64,28 @@
 
 .side-img{
   background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true") center center /cover;
+  @include ipad{
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true") center center /cover;
+    margin-top: 80px;
+  }
   @include mobile{
     background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true") center center /cover;
     margin-top: 40px;
   }
   h3{
     color: $text-light;
-    @include mobile{
-      font-size: $font-m;
-    }
+    font-weight: bold;
   }
   .card{
     width: 50%;
     @include ipad{
       width: 100%;
+    }
+    h3{
+      padding-top: 8px;
+      @include mobile{
+        font-size: $font-xl;
+      }
     }
   }
   .text{
