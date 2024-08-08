@@ -19,7 +19,7 @@ body{
 }
 
 @mixin mobile{
-  @media(max-width: 375px){
+  @media(max-width: 450px){
     @content;
   }
 }
@@ -110,4 +110,8 @@ h3{
 
 .row{
   margin: 0px -12px;
+}
+
+.text-center{
+  text-align: center;
 }
